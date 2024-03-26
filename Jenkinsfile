@@ -10,8 +10,8 @@ pipeline {
   }
   stage('Docker push to docker hub') {
    steps {
-      sh 'sudo docker image tag phptest kancw0n/phptest:latest'
-      sh ' sudo docker login -u="kancw0n"-p="Duklee#7duck" && sudo docker push kancw0n/phptest:latest'
+      sh 'sudo docker image tag phptest kancw0n/phptest:vi'
+      sh ' sudo docker login -u="kancw0n"-p="Duklee#7duck" && sudo docker push kancw0n/phptest:vi'
       sh 'echo "Image pushed to the dockerhub"'
 
    }
@@ -24,4 +24,5 @@ pipeline {
   }
  }
 }
+
 
